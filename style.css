@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+nav a{
+    align-content: center;
+    font-weight: 800;
+    font-size: 2sem;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+body {
+    height: 100%;
+    background-image: url("media/background.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: stretch;
+    align-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+fieldset {
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+}
+
+input {
+    border-style: none;
+}
+button {
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.head {
+    background-color: #03036b;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.title {
+    display: inline-flex;
+    flex-direction: row;
+    justify-items: space-between;
+    font-style: italic;
+    /* font-size: xx-large; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    /* align-content: stretch; */
+    /* justify-items: stretch; */
+    background-color: red;
+    flex: 1;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    padding-left: 4em;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 25vw;
+    justify-content: center;
+}
+.sidebar {
+    background-color: green;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    max-width: 15vw;
+    padding-bottom: 15vh;
+    /* padding-top: 12vh; */
+    /* margin: 10px; */
+}
