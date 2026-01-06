@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TravelBloom - Discover your dream destinations and explore the world">
+    <meta name="description" content="Contact TravelBloom - We'd love to hear from you and help plan your next adventure">
     <link rel="stylesheet" href="style.css">
-    <title>TravelBloom - Explore Dream Destinations</title>
+    <title>Contact Us - TravelBloom</title>
 </head>
 <body>
     <header class="navbar">
@@ -22,21 +22,9 @@
                 <a href="contact.html">Contact us</a>
             </nav>
         </div>
-        <div class="navbar-right">
-            <form class="search-form" role="search" aria-label="Search destinations">
-                <fieldset>
-                    <label for="search" class="visually-hidden">Search destinations</label>
-                    <input type="text" name="search" id="search" placeholder="Enter a destination or keyword" aria-label="Search input">
-                    <span id="searchIcon" aria-hidden="true">
-                        <img src="media/assets/search.png" alt="">
-                    </span>
-                    <button type="button" id="searchBtn" aria-label="Search">Search</button>
-                    <button type="button" id="resetBtn" aria-label="Reset search">Clear</button>
-                </fieldset>
-            </form>
-        </div>
+        <div class="navbar-right"></div>
     </header>
-    <main class="container">
+    <main class="container contact-container">
         <aside class="sidebar" aria-label="Social media links">
             <a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
                 <img src="media/social/x.png" alt="X logo">
@@ -51,16 +39,27 @@
                 <img src="media/social/youtube.png" alt="YouTube logo">
             </a>
         </aside>
-        <section class="content">
-            <h1>Explore Dream Destination</h1>
-            <p>
-                It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, 
-                while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
-            </p>
-            <button type="button" class="cta-button">Book Now</button>
+        <section class="contact-left">
+            <div class="contact-message">
+                <h1>Contact Us</h1>
+                <p>Get in touch</p>
+            </div>
         </section>
-        <section class="search-results" id="search-results">
-            <!-- Here will be the search results -->
+        <section class="contact-right">
+            <div class="contact-form">
+                <form action="#" method="post" class="contact" aria-label="Contact form">
+                    <label for="name">Name <span class="required" aria-label="required">*</span></label>
+                    <input type="text" name="name" id="name" required aria-required="true" autocomplete="name" placeholder="your name">
+                    
+                    <label for="email">Email <span class="required" aria-label="required">*</span></label>
+                    <input type="email" name="email" id="email" required aria-required="true" autocomplete="email" placeholder="your email">
+                    
+                    <label for="msg">Message <span class="required" aria-label="required">*</span></label>
+                    <textarea name="msg" id="msg" cols="30" rows="10" required aria-required="true" placeholder="your message"></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </section>
     </main>
     <script src="./travel_recommendation.js"></script>
